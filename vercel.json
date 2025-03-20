@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "buildCommand": "cd fitness-tracker/Server && npm install",
-  "outputDirectory": "fitness-tracker/Server",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/server.js" }
+  "builds": [
+    { 
+      "src": "index.js", 
+      "use": "@vercel/node" 
+    }
+  ],
+  "routes": [
+    { 
+      "src": "/(.*)", 
+      "dest": "/index.js" 
+    }
   ]
 } 
