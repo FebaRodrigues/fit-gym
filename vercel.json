@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd fitness-tracker/Server && npm install",
+  "outputDirectory": "fitness-tracker/Server",
+  "framework": "node",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/server.js" }
+  ]
+} 
